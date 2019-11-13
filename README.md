@@ -1,10 +1,8 @@
 # Various operators for Blender 2.80
-Some of this code might have half implemented features or limited poll definitions.
+
+Lot of old operators that needed to filtered, sorted, and prepped for release to the community.
 
 
-
-
-OOOOOOLD notes, note relevant yet probably
 
 File
 ===
