@@ -35,29 +35,34 @@ import bpy
 # load and reload submodules
 ##################################
 # from . import op_file_save_incremental
-from . import op_node_management
+# from . import op_node_management
+from . import object_context_menu_additions
 # from . import viewport_draw_image
 
 
 import importlib
 # importlib.reload(op_file_save_incremental)
-importlib.reload(op_node_management)
+# importlib.reload(op_node_management)
 # importlib.reload(viewport_draw_image)
+importlib.reload(object_context_menu_additions)
 
 # register
 ##################################
 
 # viewport_draw_image.VIEW3D_OT_draw_image_test,
-classes = [
-    op_node_management.NODES_OT_nodes_to_json,
-]
+# op_node_management.NODES_OT_nodes_to_json,
+# classes = [
+# 
+# ]
 
 
 def register():
-    for cls in classes:
-        bpy.utils.register_class(cls)
+    # for cls in classes:
+    #     bpy.utils.register_class(cls)
+    object_context_menu_additions.register()
 
 
 def unregister():
-    for cls in classes:
-        bpy.utils.unregister_class(cls)
+    # for cls in classes:
+    #     bpy.utils.unregister_class(cls)
+    object_context_menu_additions.unregister()
