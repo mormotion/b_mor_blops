@@ -4,7 +4,7 @@ import shutil
 import os
 import json
 
-# TODO: Yo, this shit doesn't do anything yet
+# TODO:  this shit doesn't do anything yet
 
 class recreated_node:
     def __init__(self, original_name, node_properties, node_inputs):
