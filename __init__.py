@@ -33,12 +33,12 @@ import bpy
 
 # load and reload submodules
 ##################################
-from . import object_ots
 from . import view3d_context_additions
+from . import data_block_management
 
 import importlib
-importlib.reload(object_ots)
 importlib.reload(view3d_context_additions)
+importlib.reload(data_block_management)
 
 # register
 ##################################
@@ -47,6 +47,7 @@ importlib.reload(view3d_context_additions)
 # op_node_management.NODES_OT_nodes_to_json,
 local_modules = [
     view3d_context_additions,
+    data_block_management,
 ]
 
 def register():
