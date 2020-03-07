@@ -35,10 +35,14 @@ import bpy
 ##################################
 from . import view3d_context_additions
 from . import data_block_management
+from . import scene_enumerate_ids
+from . import object_add_extras
 
 import importlib
 importlib.reload(view3d_context_additions)
 importlib.reload(data_block_management)
+importlib.reload(scene_enumerate_ids)
+importlib.reload(object_add_extras)
 
 # register
 ##################################
@@ -48,6 +52,8 @@ importlib.reload(data_block_management)
 local_modules = [
     view3d_context_additions,
     data_block_management,
+    scene_enumerate_ids,
+    object_add_extras,
 ]
 
 def register():
