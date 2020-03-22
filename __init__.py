@@ -40,15 +40,17 @@ from . import object_add_extras
 from . import object_modifiers
 from . import object_layout_tools
 from . import object_store_transform
+from . import world_operators
 
-import importlib
-importlib.reload(view3d_context_additions)
-importlib.reload(data_block_management)
-importlib.reload(scene_enumerate_ids)
-importlib.reload(object_add_extras)
-importlib.reload(object_modifiers)
-importlib.reload(object_layout_tools)
-importlib.reload(object_store_transform)
+# import importlib
+# importlib.reload(view3d_context_additions)
+# importlib.reload(data_block_management)
+# importlib.reload(scene_enumerate_ids)
+# importlib.reload(object_add_extras)
+# importlib.reload(object_modifiers)
+# importlib.reload(object_layout_tools)
+# importlib.reload(object_store_transform)
+# importlib.reload(world_operators)
 
 # register
 ##################################
@@ -63,6 +65,7 @@ local_modules = [
     object_modifiers,
     object_layout_tools,
     object_store_transform,
+    world_operators,
 ]
 
 def register():

@@ -14,9 +14,9 @@ class OBJECT_OT_grid_distribute_selected(bpy.types.Operator):
     bl_description = 'Grid Layout Objects'
     bl_options = {"REGISTER", "UNDO"}
 
-    padding = FloatProperty(name='Padding', default=0)
-    rows = IntProperty(name='Rows', default=1, min=1)
-    index_offset = IntProperty(name='Index Offset', default=0)
+    padding : FloatProperty(name='Padding', default=0)
+    rows : IntProperty(name='Rows', default=1, min=1)
+    index_offset : IntProperty(name='Index Offset', default=0)
 
     @classmethod
     def poll(cls, context):
@@ -62,7 +62,7 @@ class OBJECT_OT_linearly_distribute_selected(bpy.types.Operator):
     bl_description = "Distribute selected object in a line"
     bl_options = {"REGISTER", "UNDO"}
 
-    step_size = FloatProperty(name='Step Size', default=1.0)
+    step_size : FloatProperty(name='Step Size', default=1.0)
 
     @classmethod
     def poll(cls, context):
